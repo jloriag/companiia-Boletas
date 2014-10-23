@@ -4,16 +4,14 @@
  *
  * Created on 23 de octubre de 2014, 09:32 AM
  */
+#include"Fecha.h"
 
-#include <cstdlib>
 
-using namespace std;
+int main() {
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
+    
     return 0;
 }
+
 
