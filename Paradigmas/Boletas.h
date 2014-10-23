@@ -39,5 +39,9 @@ private:
     int _id; //KEY Boleta
 };
 
+class BoletaCarro:Boleta{
+
+};
+
 #endif	/* BOLETAS_H */
 
