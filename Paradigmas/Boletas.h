@@ -40,7 +40,8 @@ private:
 };
 
 class BoletaCarro:Boleta{
-
+private:
+    
 };
 
 #endif	/* BOLETAS_H */
