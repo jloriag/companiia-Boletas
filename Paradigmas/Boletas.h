@@ -7,15 +7,36 @@
 
 #ifndef BOLETAS_H
 #define	BOLETAS_H
-#include"Objeto.h"
-class Boletas {
+#include"Cliente.h"
+#include "Fecha.h"
+class Boleta:Objeto {
 public:
-    Boletas();
-    ~Boletas();
+    Boleta();
+    ~Boleta();
+    
+    string getModelo()const;
+    string getEstilo()const;
+    Date* getFechaE()const;
+    Date* getFechaS()const;
+    Cliente* getCliente()const;
+    int getID()const;
+    
+    void setModelo(string);
+    void setEstilo(string);
+    void setFechaE(Date*);
+    void setFechaS(Date*);
+    void setCliente(Cliente*);
+    void setId(int);
+    
+    //SobreEscritura
+    string toString();
 private:
     string _modelo;
     string _estilo;
-    Date* _fecha;
+    Date* _fechaEntrada;
+    Date* _fechaSalida;
+    Cliente* _cliente;
+    int _id; //KEY Boleta
 };
 
 #endif	/* BOLETAS_H */

@@ -8,9 +8,11 @@
 #ifndef CLIENTE_H
 #define	CLIENTE_H
 #include"Objeto.h"
-class Cliente {
+class Cliente:Objeto {
 public:
     Cliente();
+    Cliente(string,string,string,string);
+    
     string getNombre()const;
     string getDirrecion()const;
     string getTelefonoCel()const;
@@ -20,6 +22,9 @@ public:
     void setDireecion(string);
     void setTelefonoCel(string);
     void setTelefonoFijo(string);
+    
+    //SobreEscritura
+    string toString();
      ~Cliente();
 private:
     string _nombre;

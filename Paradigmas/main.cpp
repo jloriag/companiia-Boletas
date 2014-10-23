@@ -4,13 +4,13 @@
  *
  * Created on 23 de octubre de 2014, 09:32 AM
  */
-#include"Fecha.h"
 
 
+
+#include"std.h"
 int main() {
-
-
-    
+    cout<<"hahaha";
+    cin.get();
     return 0;
 }
 

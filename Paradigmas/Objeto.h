@@ -15,8 +15,6 @@ public:
 	// Método Virtual Puro
 	virtual string toString() = 0;
 
-	// Método Virtual Puro
-	virtual void Captura() = 0;
 };
 
 #endif	/* OBJETO_H */
