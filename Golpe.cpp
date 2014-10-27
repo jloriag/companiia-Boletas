@@ -28,11 +28,13 @@ string Golpe::toString() {
 }
 
 void Golpe::captura(){
+	cin.clear();
+	_flushall();
 	cout << "Agregar nuevo Danno Vehicular" << endl;
 	cout << "Lugar: " << endl;
-	cin >> _lugar;
+	getline(cin, _lugar);
 	cout << "Nivel" << endl;
-	cin >> _nivel;
+	getline(cin, _nivel);
 }
 Golpe::~Golpe() {
 }

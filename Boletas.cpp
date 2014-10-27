@@ -69,6 +69,8 @@ string Boleta::toString() {
 	return s.str();
 }
 void Boleta::captura(){
+	cin.clear();
+	_flushall();
 	cout << "---Agregar Boleta---" << endl;
 	cout << "Numero de ID (key) de Boleta"<<endl;
 	cin >> _key;
@@ -76,7 +78,7 @@ void Boleta::captura(){
 	cout << "Modelo del Vehiculo: " << endl;
 	cin >> _modelo;
 	cout << "Estilo del Vehiculo: " << endl;
-	cin >> _estilo;
+	cin>> _estilo;
 	cout << "Fecha de Entrada:" << endl;
 	_fechaEntrada.captura();
 	cout << "Fecha de Salida" << endl;
@@ -134,6 +136,8 @@ string BoletaGarantia::toString() {
 	return s.str();
 }
 void BoletaGarantia::captura(){
+	cin.clear();
+	_flushall();
 	cout << "---Agregar Garantía---" << endl;
 	cout << "Kilometraje: " << endl;
 	cin >> _kilometraje;
@@ -183,7 +187,7 @@ string BoletaFalla::toString() {
 void BoletaFalla::captura(){
 	cout << "---Agregar Falla---" << endl;
 	cout << "Descripcion de la falla: " << endl;
-	cin >> _descripcion;
+	getline(cin,_descripcion);
 
 }
 

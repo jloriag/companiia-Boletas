@@ -30,9 +30,9 @@ string Articulo::toString() {
 void Articulo::captura(){
 	cout << "----Agregar Articulo ----" << endl;
 	cout << "Nombre: " << endl;
-	cin >> _nombre;
+	getline(cin, _nombre);
 	cout << "Descripcion: " << endl;
-	cin >> _descripcion;
+	getline(cin, _descripcion);
 }
 
 

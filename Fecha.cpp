@@ -120,6 +120,7 @@ string Fecha::toString(int variab){
 }
 void Fecha::captura(){
 	cin.clear();
+	_flushall();
 	int op;
 	cout << "Si desea la Fecha Actual digite 1 o cualquier otra tecla para continuar"<<endl;
 	cin >> op;
